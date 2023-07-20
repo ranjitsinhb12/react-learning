@@ -1,0 +1,97 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Arial;
+    padding: 0px;
+}
+.App{
+    margin-left:50%;
+    
+}
+.profile--photo{
+    width: 317px;
+    height: 317px;
+}
+
+.MainContent {
+    width: 317px;
+    min-height: 399px;
+    background-color: #F5F5F5;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.Title {
+    color: #2B283A;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    margin:5px 0px;
+}
+
+.JobTitle {
+    font-size: 12.8px;
+    color: #F47D27;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.Website {
+    margin-top: 10px;
+    color: #4A4E74;
+    font-size: 10.24px;
+    text-align: center;
+}
+
+.EmailButton {
+    margin-top: 10px;
+    stroke: #D1D5DB;
+    width: 247px;
+    height: 34px;
+    box-shadow: 2px 2px 4px #1E1F26;
+}
+
+.Content-Me{
+    text-align:justify;
+    width: 90%;
+    margin: auto;
+}
+
+.Content-Me--Heading {
+    font-size: 16px;
+    font-weight: bold;
+    width: 247px;
+    margin: 20px auto;
+    color: #2B283A;
+}
+.About-Details {
+    margin: 10px auto;
+    text-align: left;
+    color: #4A4E74;
+    font-size: 10.24px;
+    width: 247px;
+    padding: 0px;
+}
+
+.footer {
+    width: 317px;
+    min-height: 64px;
+    overflow: auto;
+    background-color: #D5D4D8;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.tweeter {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    padding: 5px;
+
+}
+
+.credit-text{
+    font-size: 10px;
+    color: red;
+}
