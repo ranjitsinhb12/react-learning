@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\samay-patrak",
+    "\\airbnb-clone",
+    "\\airbnb-clone\\src",
+    "\\airbnb-clone\\src\\components",
     "\\samay-patrak\\src",
     "\\samay-patrak\\src\\components"
   ],
-  "SelectedNode": "\\samay-patrak\\src\\components\\Footer.js",
+  "SelectedNode": "\\airbnb-clone",
   "PreviewInSolutionExplorer": false
 }
