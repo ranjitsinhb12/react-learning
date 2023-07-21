@@ -1,10 +1,10 @@
 import React from 'react';
-import HeroImg from '../images/hero-img.png';
+
 
 export default function Hero() {
     return (
         <section className="hero">
-            <img src={HeroImg} alt="Hero" className="hero--img" />
+            <img src="../images/hero-img.png" alt="Hero" className="hero--img" />
             <h1 className="hero--title">
                 Online Experience
             </h1>

@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\airbnb-clone",
+    "\\airbnb-clone\\public",
     "\\airbnb-clone\\src",
-    "\\airbnb-clone\\src\\components",
-    "\\samay-patrak\\src",
-    "\\samay-patrak\\src\\components"
+    "\\airbnb-clone\\src\\components"
   ],
-  "SelectedNode": "\\airbnb-clone",
+  "SelectedNode": "\\airbnb-clone\\src\\Data.js",
   "PreviewInSolutionExplorer": false
 }
