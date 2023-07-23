@@ -57,10 +57,24 @@ section{
 .card{
     width: 175px;
     font-size: 12px;
+    flex: auto;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    
+}
+.card--title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0;
+    
+    
 }
 
 .card--img{
     width: 100%;
+    margin-bottom: 9px;
 }
 
 .card--stat{
@@ -70,4 +84,14 @@ section{
 
 .card--star{
     height: 14px;
+}
+
+.card--badge{
+    position: absolute;
+    padding: 5px;
+    top: 30px;
+    left: 30px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 2px;
 }
