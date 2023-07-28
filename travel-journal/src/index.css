@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+    display: flex;
+    width: 550px;
+    height: 55px;
+    background-color: #F55A5A;
+    color: #FFFFFF;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main {    
+    width: 550px;
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main__article {
+    display: flex;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+.main__detail-section{
+    padding: 10px;
+}
+
+.main__location {
+    color: #2B283A;
+    font-size: 10.24px;
+    padding: 5px;
+}
+
+.main__map-link > a:any-link {
+    color: #918E9B;
+    font-size: 10.24px;
+    padding: 5px;
+}
+
+.main__title{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.main__date {
+    color: #2B283A;
+    font-size: 10.24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main__details{
+    font-size: 10.24px;
+}
