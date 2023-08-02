@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\airbnb-clone",
-    "\\airbnb-clone\\public",
-    "\\airbnb-clone\\src",
-    "\\airbnb-clone\\src\\components"
+    "\\travel-journal\\src"
   ],
-  "SelectedNode": "\\airbnb-clone\\src\\App.js",
+  "SelectedNode": "\\meme-generator",
   "PreviewInSolutionExplorer": false
 }
