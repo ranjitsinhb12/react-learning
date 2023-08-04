@@ -1,10 +1,12 @@
 import React from 'react'
-import Form from './form'
+/*import Form from './form'*/
+import Registration from './registration-form'
 
 function App() {
   return (
     <div className="App">
-      <Form />
+          {/*<Form />*/}
+          <Registration />
     </div>
   );
 }

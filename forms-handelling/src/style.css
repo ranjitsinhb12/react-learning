@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rebeccapurple;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 50vw;
+    background-color: whitesmoke;
+    padding: 0.5rem;    
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+h2{
+    padding: 10px;
+}
+
+.form-textbox{
+    display:flex;
+    text-indent: 10px;
+    height: 30px;
+    border: 1px solid #808080;
+}
+
+.subscribeButton{
+    display: block;
+    padding: 10px;
+    background-color:rebeccapurple;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke
+}
