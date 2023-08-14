@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: darkorange;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.windowTrackerButton{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    
+}
+
+.windowTracker__heading{
+    margin: 10px;
+    color: antiquewhite;
+}

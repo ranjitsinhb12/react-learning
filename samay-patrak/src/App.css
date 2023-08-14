@@ -1,53 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Inter&display=swap');
+
+
 * {
     box-sizing: border-box;
-    font-family: Inter, sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
 }
 
 body {
     margin: 0;
-    height: 100vh;
-    background-color: #282D35;
 }
-.nav{
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* NAV styles */
+
+nav {
     display: flex;
     align-items: center;
-    background-color: #21222A;
+    background-color: #ffffff;
     padding: 30px 25px;
-    height: 90px;
-
+    height: 60px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
-.nav--logo-text, .nav--title {
-    margin: 0;
+    nav.dark {
+        background-color: #21222A;
+    }
+
+.nav--logo_icon {
+    width: 30px;
+    margin-right: 10px;
 }
-.nav--logo-text {
-    margin-right: auto;
+
+.nav--logo_text {
     color: #61DAFB;
-    font-weight: 700;
-    font-size: 22px;
-    margin-left: 7px;
+    margin-right: auto;
 }
 
 .nav--title {
     color: #DEEBF8;
-    font-weight: 600;
-    
 }
 
-
-nav--logo {
-    width: 29px;
-    height: 29px;
+.toggler {
+    display: flex;
+    align-items: center;
 }
 
-.mainContent {
+    .toggler p {
+        font-size: 0.625rem;
+        font-weight: 600;
+    }
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+
+/* MAIN styles */
+main {
     padding: 57px 27px;
-    color: white;
-    background-image: url('./images/react-grey-logo.png');
+    background-image: url("react-light-logo.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right center;
+    flex: 1 1 auto;
+    background-color: white;
+    color: #2B283A;
+    height: calc(100vh - 120px)
 }
+
+    main.dark {
+        background-image: url("react-grey-logo.png");
+        background-color: #282D35;
+        color: white;
+        
+    }
 
 .main--title {
     margin: 0;
@@ -55,25 +136,27 @@ nav--logo {
     letter-spacing: -0.05em;
 }
 
-.main--facts{
+.main--facts {
     margin-top: 46px;
     max-width: 400px;
 }
 
-.main--facts > li{
-    line-height: 19px;
-    padding-block: 10px;
+    .main--facts > li {
+        line-height: 19px;
+        padding-block: 10px;
+    }
+
+        .main--facts > li::marker {
+            font-size: 1.4rem;
+            color: #61DAFB;
+        }
+
+.footer {
+    background-color: white;
+    height: 60px;
 }
 
-.main--facts > li::marker {
-    font-size: 1.4rem;
-    color: #61DAFB;
-}
-
-.footer--credit{
-    justify-content: center;
+footer.dark {
+    background-color: #282D35;
     color: white;
-    text-align: center;
 }
-
-

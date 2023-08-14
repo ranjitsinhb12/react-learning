@@ -1,16 +1,28 @@
-import logo from '../images/react-logo.png';
+import React from "react"
 
-
-function Header() {
+export default function Navbar(props) {
     return (
-        <header>
-            <nav className="nav">
-                <img src={logo} alt="React Logo" className="nav--logo" />
-                <h3 className="nav--logo-text">ReactFacts</h3>
-                <h4 className="nav--title">React Course - Project 1</h4>
-            </nav>
-        </header>
+        <nav
+            className={props.darkMode ? "dark" : ""}
+        >
+            <img
+                className="nav--logo_icon"
+                src="./images/react-logo.png"
+            />
+            <h3 className="nav--logo_text">ReactFacts</h3>
+
+            <div
+                className="toggler"
+            >
+                <p className="toggler--light">Light</p>
+                <div
+                    className="toggler--slider"
+                    onClick={props.toggleDarkMode}
+                >
+                    <div className="toggler--slider--circle"></div>
+                </div>
+                <p className="toggler--dark">Dark</p>
+            </div>
+        </nav>
     )
 }
-
-export default Header;
