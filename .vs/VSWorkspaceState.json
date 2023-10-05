@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\airbnb-clone\\src",
+    "\\airbnb-clone\\src\\components",
+    "\\vanlife\\public\\images",
+    "\\vanlife\\src",
+    "\\vanlife\\src\\component",
+    "\\vanlife\\src\\pages"
   ],
+  "SelectedNode": "\\vanlife",
   "PreviewInSolutionExplorer": false
 }
