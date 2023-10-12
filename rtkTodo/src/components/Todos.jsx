@@ -8,7 +8,7 @@ export default function Todos(){
     return(
        <>
         { 
-        todos.map((todo)=>(
+        todos?.map((todo)=>(
             
             <div className='bg-gray-500 mt-5 p-2 text-white flex justify-between item-center' key = {todo.id}>
                 {todo.text}
