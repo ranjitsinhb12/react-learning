@@ -1,13 +1,13 @@
 import config from '../config/config.js'
 import {Client, ID, Storage} from 'appwrite'
 
-export class storageService{
+export class StorageService{
     client = new Client()
     storage;
 
     constructor(){
         this.client
-            setEndpoint(config.appWriteUrl) // Your API Endpoint
+            .setEndpoint(config.appWriteUrl) // Your API Endpoint
             .setProject(config.appWriteProjectId);
         this.storage = new Storage(this.client)
 
@@ -25,11 +25,11 @@ export class storageService{
         }
     }
 
-    async deleteFile(fileId){
+    async deleteFile(fileid){
         try {
             await this.storage.deleteFile(
                 config.appWriteBucketId,
-                fileId
+                fileid
             )
             return true
         } catch (error) {
@@ -38,15 +38,15 @@ export class storageService{
         }
     }
 
-    getFilePreview(fileId){
+    getFilePreview(fileid){
         return this.storage.getFilePreview(
             config.appWriteBucketId,
-            fileId
+            fileid
         )
     }
 
 }
 
-const databaseService = new DatabaseService()
+const storageService = new StorageService()
 
-export default databaseService
+export default storageService

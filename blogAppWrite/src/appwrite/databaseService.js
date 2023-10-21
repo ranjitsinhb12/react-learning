@@ -7,20 +7,20 @@ export class DatabaseService{
 
     constructor(){
         this.client
-            setEndpoint(config.appWriteUrl) // Your API Endpoint
+            .setEndpoint(config.appWriteUrl) // Your API Endpoint
             .setProject(config.appWriteProjectId);
         this.databases = new Databases(this.client)
 
     }
 
-    async createPost({title, slug, content, featuredImage, status, userId}){
+    async createPost({title, slug, content, featuredimage, status, userid}){
         try {
             return await this.databases.createDocument(config.appWriteDatabaseId, config.appWriteCollectionId, slug, {
                 title,
                 content,
-                featuredImage,
+                featuredimage,
                 status,
-                userId
+                userid
             })
         } catch (error) {
             console.log("Appwrite:: Services:: createPost:: error", error)
@@ -64,7 +64,7 @@ export class DatabaseService{
         }
     }
 
-    async getPosts(quries = [Query.equal("status", "Active")]){
+    async getPosts(quries = [Query.equal("status", "active")]){
         try {
             return await this.databases.listDocuments(
                 config.appWriteDatabaseId,
