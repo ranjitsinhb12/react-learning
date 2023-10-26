@@ -23,7 +23,6 @@ function Login() {
                     navigate("/")
                 }
             }
-            console.log("reached here")
         } catch (error) {
             setError(error.message)
         }

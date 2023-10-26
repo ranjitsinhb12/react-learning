@@ -4,7 +4,7 @@ import databaseService from '../appwrite/databaseService'
 import { useParams, useNavigate } from 'react-router-dom'
 
 function EditPost() {
-    const [post, setPost] = useState([])
+    const [post, setPost] = useState(null)
     const {slug} = useParams()
     const navigate = useNavigate()
     
@@ -12,7 +12,9 @@ function EditPost() {
         if(slug){
             databaseService.getPost(slug)
             .then((post)=>{
-                setPost(post)
+                if(post){
+                    setPost(post)
+                }
             })
         }else{
             navigate('/')
@@ -21,7 +23,11 @@ function EditPost() {
     return (
        post? (
         <div className='py-8'>
-            <PostForm post={post} />
+            <Container>
+                 <PostForm post={post}/> 
+            </Container>
+            
+            
         </div>
        ) : null 
     )

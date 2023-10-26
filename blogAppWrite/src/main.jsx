@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         )
       },
       {
-        path: '/edit-posts:slug',
+        path: '/edit-posts/:slug',
         element: (
           <AuthLayout authentication>
             {" "}

@@ -6,7 +6,16 @@ import { useSelector } from 'react-redux'
 function Home() {
     const authStatus = useSelector(state => state.auth.status)
     const [posts, setPosts] = useState([])
-
+   
+    useEffect(()=>{
+        databaseService.getPosts()
+        .then((posts)=>{
+             if(posts){
+                 setPosts(posts.documents)
+             }
+        }) 
+     },[])
+     
     if(!authStatus){
         return(
             <div className='w-full py-8'>
@@ -18,14 +27,7 @@ function Home() {
             </div>
         )
     }
-    useEffect(()=>{
-        databaseService.getPosts()
-        .then((posts)=>{
-             if(posts){
-                 setPosts(posts.documents)
-             }
-        }) 
-     },[])
+   
 
     return(
         <div className='w-full py-8'>
